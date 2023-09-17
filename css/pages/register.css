@@ -1,17 +1,18 @@
-/* Tamaño de fuente */
+/* Fuentes */
 * {
   font-family: var(--alternative-font);
 }
+
 a {
-  font-size: 1.25rem;
+  font-size: var(--font-medium);
 }
 
 h2 {
-  font-size: 2.6rem;
+  font-size: var(--font-large);
 }
 
 p {
-  font-size: 2rem;
+  font-size: var(--font-medium);
   font-weight: 500;
 }
 
@@ -20,13 +21,15 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 8rem;
 }
 
+/* Logo */
 .logo-horizontal {
   width: 23rem;
 }
 
+/* Enlaces del nav */
 .lista-nav {
   display: flex;
   gap: 5rem;
@@ -44,12 +47,14 @@ main {
   margin: 2rem auto;
 }
 
+/* Formulario */
 form {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
+/* Contenedor de cada input y su label */
 .form-group {
   display: flex;
   align-items: center;
@@ -63,27 +68,53 @@ label {
   margin-right: 15px;
 }
 
-input {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
   border: none;
-  border-bottom: 0.25rem solid red;
+  border-bottom: 0.25rem solid var(--primary-color-solid);
   font-family: var(--primary-font);
 }
 
-.boton-registrar {
-  color: white;
-  background-color: red;
-  padding: 1rem;
-  width: fit-content;
+input[type="text"],
+input[type="email"],
+input[type="password"]:focus-visible {
+  outline: none;
 }
 
+/*Tamaño de placeholder de contraseña */
+.contra::placeholder {
+  font-size: 5rem;
+}
+
+/* Contenedor de botón registrar y checkbox */
 .boton-y-checkbox {
   display: flex;
   align-items: center;
   gap: 5rem;
 }
+
+/* Botón registrar */
+.boton-registrar {
+  color: white;
+  background-color: var(--primary-color-solid);
+  border-style: none;
+  padding: 1rem;
+  width: fit-content;
+}
+
+.boton-registrar:hover {
+  background-color: var(--primary-color-900);
+}
+
+/* Texto términos y condiciones */
 .terminos a {
   font-size: 1.5rem;
-  color: #1d84b5;
+  color: var(--secondary-color-solid);
+}
+
+.terminos a:hover {
+  color: var(--secondary-color-900);
 }
 
 /* Footer */
@@ -93,13 +124,15 @@ footer {
   text-align: center;
 }
 
+/* Contenedor de enlaces y logo */
 .contenedor-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 8rem;
+  padding: 3.3rem 8rem 2rem 8rem;
 }
 
+/* Enlaces del footer */
 .lista-footer {
   display: flex;
   flex-direction: column;
@@ -107,6 +140,17 @@ footer {
   text-align: start;
 }
 
+.lista-footer li:hover {
+  text-decoration: underline;
+}
+
+/* Logo */
 .logo-isotipo {
   width: 8.9rem;
+}
+
+/* Texto All rights reserved.. del footer */
+.derechos {
+  font-size: var(--font-small);
+  font-weight: normal;
 }

@@ -15,10 +15,9 @@
 <body>
   <header>
     <nav>
-      <picture>
-        <img src="/images/branding/logo_light_horizontal.svg" alt="logo-horizontal">
-      </picture>
-      <ul>
+      <a href="/pages/home.html">
+        <img class="logo-horizontal" src="/images/branding/logo_light_horizontal.svg" alt="logo-horizontal"></a>
+      <ul class="lista-nav">
         <li><a href="/pages/shop.html">VER TIENDA</a></li>
         <li><a href="/pages/admin.html">ADMIN</a></li>
         <li><a href="/pages/home.html">SALIR</a></li>
@@ -29,41 +28,46 @@
     <h2>CREA TU CUENTA</h2>
     <p>Completa el formulario para ser parte del mundo de los Funkos</p>
     <form>
-      <label for="name">Nombre:</label>
-      <input type="text" name="nombre" id="nombre" placeholder="John">
-
-      <label for="apellido">Apellido:</label>
-      <input type="text" name="apellido" id="apellido" placeholder="Doe">
-
-      <label for="email">Email:</label>
-      <input type="text" name="email" id="email" placeholder="Johndoe@correo.com">
-
-      <label for="contraseña">Contraseña:</label>
-      <input type="text" name="contraseña" id="contraseña" placeholder="********">
-
-      <label for="repetir-contraseña">Repita contraseña:</label>
-      <input type="text" name="repetir-contraseña" id="repetir-contraseña" placeholder="********">
-
-      <input type="button" value="Registrar">
-
-      <input type="checkbox" name="terminos" id="terminos">
-      <label for="terminos">Acepto <a href="#">Términos y Condiciones</a></label>
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="John">
+      </div>
+      </div>
+      <div class="form-group"><label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Doe">
+      </div>
+      <div class="form-group"><label for="email">Email:</label>
+        <input type="text" name="email" id="email" placeholder="Johndoe@correo.com">
+      </div>
+      <div class="form-group"><label for="contraseña">Contraseña:</label>
+        <input type="text" name="contraseña" id="contraseña" placeholder="........">
+      </div>
+      <div class="form-group"><label for="repetir-contraseña">Repita contraseña:</label>
+        <input type="text" name="repetir-contraseña" id="repetir-contraseña" placeholder="........">
+      </div>
+      <div class="boton-y-checkbox">
+        <input class="boton-registrar" type="submit" value="Registrar">
+        <div class="checkbox">
+          <input type="checkbox" name="terminos" id="terminos">
+          <label class="terminos" for="terminos">Acepto <a href="#">Términos y Condiciones</a></label>
+        </div>
+      </div>
     </form>
-    <footer>
-      <ul>
+  </main>
+  <footer>
+    <div class="contenedor-footer">
+      <ul class="lista-footer">
         <li><a href="/pages/shop.html">SHOP</a></li>
         <li><a href="/pages/register.html">REGISTRARSE</a></li>
         <li><a href="/pages/login.html">INGRESAR</a></li>
         <li><a href="#">CONTACTO</a></li>
       </ul>
       <picture>
-        <img src="/images/branding/isotype.svg" alt="logo isotipo">
+        <img class="logo-isotipo" src="/images/branding/isotype.svg" alt="logo isotipo">
       </picture>
-      <p>All rights reserved 2022 - Funkoshop &copy;</p>
-    </footer>
-  </main>
-
-
+    </div>
+    <p>All rights reserved 2022 - Funkoshop &copy;</p>
+  </footer>
 
   <!-- Vinculacion con Libreria Iconify 1.0.7 -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>

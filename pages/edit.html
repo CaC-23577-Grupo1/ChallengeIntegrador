@@ -12,13 +12,13 @@
     <header>
         <nav class="navbar container">
            <picture class="navbar__logo ">
-              <a href="./index.html">
-                 <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funko">
+              <a href="../index.html">
+                 <img src="../images/branding/isotype.svg" alt="Isologotipo de la marca Funko">
               </a>
            </picture>
            <ul class="navbar__menu ">
               <li class="navbar__item with-submenu">
-                 <a class="navbar__link with-icon" href="./pages/shop.html">VER TIENDA<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                 <a class="navbar__link with-icon" href="../pages/shop.html">VER TIENDA<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
                  <ul class="submenu">
                     <li class="submenu__item">
                        <a href="" class="submenu__link">Funkos</a>
@@ -32,10 +32,10 @@
                  </ul>
               </li>
               <li class="navbar__item"> 
-                 <a class="navbar__link" href="./pages/contacto.html">ADMIN</a>
+                 <a class="navbar__link" href="">ADMIN</a>
               </li>
               <li class="navbar__item">
-                 <a class="navbar__link" href="./pages/login.html">SALIR</a>
+                 <a class="navbar__link" href="">SALIR</a>
               </li>
            </ul>
         </nav>
@@ -102,10 +102,10 @@
                  <div class="edit_form__imagenes">
                     <label for="imagenes_producto">Imágenes:</label>
                     <input type="file" name="imagenes_producto" id="imagenes_producto" onchange=""><!--En "onchange" se llama la función de JS ára mostrar las imagenes seleccionadas-->
-                    <img id="img-preview__frente" src="" alt="Imagen del frente del producto" style="display: none; max-width: 150px;">
+                    <img id="img-preview__frente" src="../images/pokemon/dragonite-1.webp" alt="Imagen del frente del producto" > <!--style="display: none; max-width: 150px;"-->
                     <div class="line_label"></div> <!--este div es para la línea roja superior de la label del preview de imágenes-->
                     <label for="img-preview__frente">Frente</label>
-                    <img id="img-preview__dorso" src="" alt="Imagen del dorso del producto" style="display: none; max-width: 150px;">
+                    <img id="img-preview__dorso" src="../images/pokemon/dragonite-box.webp" alt="Imagen del dorso del producto" > <!--style="display: none; max-width: 150px;"-->
                     <div class="line_label"></div> <!--este div es para la línea roja superior de la label del preview de imágenes-->
                     <label for="img-preview__dorso">Dorso</label>
                  </div>
@@ -118,28 +118,29 @@
            <nav class="nav_footer__container">
               <ul class="nav_footer__menu" >
                  <li>
-                  <a class= "navbar__link" href="./pages/shop.html">SHOP</a>
+                  <a class= "navbar__link" href="../pages/shop.html">SHOP</a>
                  </li>
                  <li>
-                  <a class= "navbar__link" href="./pages/register.html">REGISTRARSE</a>
+                  <a class= "navbar__link" href="../pages/register.html">REGISTRARSE</a>
                  </li>
                  <li>
-                  <a class= "navbar__link" href="./pages/login.html">LOGIN</a>
+                  <a class= "navbar__link" href="../pages/login.html">LOGIN</a>
                  </li>
                  <li>
-                  <a class= "navbar__link" href="./pages/contact.html">CONTACTO</a>
+                  <a class= "navbar__link" href="">CONTACTO</a>
                  </li>
               </ul>
               <div class="footer_logo">
               <picture >
-                 <img src="../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+                 <img src="../images/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
               </picture>
               </div>
            </nav>
+           <div class="note_footer">
+            <p>All rights reserved 2023 - Funkoshop &copy;</p>
+           </div>
         </section>
-        <div class="note_footer">
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
-        </div>
+       
     </footer>
     
     <!-- Vinculacion con Libreria Iconify 1.0.7 -->

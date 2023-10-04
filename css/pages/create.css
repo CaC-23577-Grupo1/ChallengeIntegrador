@@ -1,2 +1,230 @@
 
 /* Desarrollo de Estilos para la Seccion:  */
+
+/*Agregar esta normalización*/
+img{
+    width: 100%;
+}
+body{
+    margin: 0;
+}
+/*Debí anular la propiedad font-size de la normalización del elemento "a"*/
+
+/*Estilos del Header*/
+
+header {
+    width: 100%;
+}
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .navbar__logo {
+    max-width: 32rem;
+ }
+
+ .navbar__menu{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+ }
+
+ .navbar__link {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    /*display: inline-block;*/
+    transition: background .3s ease-in-out;
+    position: relative;
+ }
+
+.navbar__link:hover {
+    background-color: var(--primary-color-solid);
+ }
+
+ .with-icon {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+ }
+
+ .with-submenu:hover .submenu {
+    display: block;
+ }
+ 
+
+ .submenu {
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: var(--dark-bg-color-solid);
+    
+ }
+
+ .submenu__link {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+ } 
+
+ .submenu__link:hover {
+    background-color: var(--primary-color-900);
+ }
+
+ /*Estilos del main de CREATE*/
+ .create {
+    padding: var(--spacing-36) 0 ;
+    font-family: var(--primary-font);
+}
+
+.create_form__row {
+    display: flex;
+    margin-top: var(--spacing-28);
+    margin-bottom: var(--spacing-28);
+}
+
+.create_form__title {
+    font-size: var(--font-jumbo);
+    font-family: var(--alternative-font);
+}
+
+.create_form__select, .create_form__input {
+    padding-right: var(--spacing-68);
+}
+
+.create_form__imagenes {
+   padding-top: var(--spacing-28);
+}
+
+.create_form__input input {
+    border: none;
+    border-bottom: 2px solid var(--primary-color-solid);
+}
+
+label {
+    font-size: var(--font-large);
+    padding-right: 15px;
+}
+
+select, input, textarea {
+    font-size: var(--font-medium);
+    color: var(--dark-color-300);
+
+}
+
+select {
+    width: 250px;
+    border-radius: 6px;
+    margin-right: var(--spacing-36);
+}
+
+#imagenes_producto {
+    font-family: var(--primary-font);
+    border-color: var(--dark-color-300); 
+}
+
+select:hover,input:hover,textarea:hover {
+    color: var(--dark-color-900);
+    font-size: var(--font-medium);
+}
+::placeholder {
+    font-family: var(--base-font);
+    color: var(--dark-color-300); 
+}
+
+textarea {
+    margin-top: 2rem;
+    width: 83rem;
+    padding-left: var(--spacing-8);
+}
+
+.action__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--spacing-28);
+    margin-bottom: 36px;
+    margin-top: 36px;
+}
+
+button {
+    font-size: var(--font-xsmall);
+    font-family: var(--primary-font);
+    color: #ffffff;
+    width: 17.5rem;
+    border: none;
+    background-color: var(--primary-color-solid);
+    padding: var(--spacing-12) var(--spacing-12);
+}
+
+#nombre_producto {
+    width: 300px;
+}
+
+#sku, #precio {
+    width: 130px;
+ }
+
+#stock, #descuento {
+    width: 55px;
+}
+
+/*Estilos del Footer*/
+.nav_footer__container {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;  
+ }
+
+ .footer_logo {
+    width:170px;;
+ }
+
+ .nav_footer__menu{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-8);
+ }
+
+ .navbar__link li {
+    font-size: var(--font-inter);
+    font-weight: 500;
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+ }
+
+  .navbar__link:hover {
+    background-color: var(--primary-color-solid);
+ }
+
+ .note_footer {
+    margin-top: var(--spacing-68);
+    text-align: center;
+ }
+ 
+ /*Estilos repetidos de header y footer para agregar a normalize*/
+ header, footer {
+    color: var(--light-bg-color-solid);
+    font-family: var(--alternative-font);
+    background-color: var(--dark-bg-color-solid);
+    padding: var(--spacing-36);
+    align-items: center;
+}
+
+@media screen and (max-width: 450px)  {
+    .navbar {
+        display:flex;
+        flex-direction: column;
+     }
+     .container {
+       padding-left: 10px;
+     }
+     textarea {
+        margin-top: 2rem;
+        width: 100%;
+        padding-left: var(--spacing-8);
+    }
+}

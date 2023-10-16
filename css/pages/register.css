@@ -9,6 +9,8 @@ a {
 
 h2 {
   font-size: var(--font-large);
+  text-align: center;
+  width: max-content;
 }
 
 p {
@@ -88,6 +90,11 @@ input[type="password"]:focus-visible {
 }
 
 /* Contenedor de botón registrar y checkbox */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
 .boton-y-checkbox {
   display: flex;
   align-items: center;
@@ -153,4 +160,48 @@ footer {
 .derechos {
   font-size: var(--font-small);
   font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .lista-nav {
+    margin: 0;
+    gap: 2.5rem;
+  }
+
+  .lista-nav li {
+    width: max-content;
+  }
+
+  main {
+    margin: 2rem;
+  }
+
+  .boton-y-checkbox {
+    gap: 2rem;
+  }
+
+  .contenedor-footer {
+    padding: 1;
+  }
+
+  .derechos {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .boton-y-checkbox {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .contenedor-footer {
+    padding: 3.35rem;
+  }
 }

@@ -17,7 +17,8 @@ html {
 a {
     font-family: inherit;
     text-decoration: none;
-    font-size: 2em;
+    /* quitamos de aquí este estilo para colocarlo directamente en item */
+    /* font-size: 2em; */
     color: inherit;
 }
 

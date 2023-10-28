@@ -9,37 +9,49 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Baby Yoda Blueball - Funkoshop</title>
-    <!-- <link rel="stylesheet" href="../css/index.css"> -->
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
     <!-- Cabecera del Sitio con menú -->
     <header>
-        <nav class="">
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="#">
                     <img src="../images/branding/logo_light_horizontal.svg" alt="Logotipo de la marca Funkoshop"">  
                 </a>
             </picture>
-                <ul>
-                    <li>
-                        <a href=" ../pages/shop.html">SHOP</a><a href=""><iconify-icon class="arrowsize"
-                        icon="tabler:chevron-down"></iconify-icon></a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">CONTACTO</a>
-                </li>
-                <li>
-                    <a href="../pages/login.html">LOGIN</a>
-                </li>
-                <li>
-                    <a href="../pages/cart.html"><img src="../images/icons/cart-icon.svg" alt="ícono de carrito"></a>
-                </li>
-                </ul>
+                <ul class=" navbar__menu">
+                    <li class="navbar__item with-submenu">
+                        <a class="navbar__link with-icon" href=" ../pages/shop.html">SHOP <iconify-icon
+                                class="arrowsize" icon="tabler:chevron-down"></iconify-icon></a>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Funkos</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Remeras</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Llaveros</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="../pages/contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="../pages/login.html">LOGIN</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__cart" href="../pages/cart.html"><img src="../images/icons/cart-icon.svg"
+                                alt="ícono de carrito"></a>
+                    </li>
+                    </ul>
 
         </nav>
     </header>
-    <main>
+    <main class="container">
         <!-- Sección 1 - Cart principal -->
         <section>
             <article class="">
@@ -53,21 +65,21 @@
                     <div>
                         <p>STAR WARS</p>
                         <h2>BABY YODA BLUEBALL</h2>
-                            <p>Figura coleccionable de Baby Yoda (Groku) - The Mandalorian Saga, edición limitada.</p>
-                            <p>$1799,99</p>
+                        <p>Figura coleccionable de Baby Yoda (Groku) - The Mandalorian Saga, edición limitada.</p>
+                        <p>$1799,99</p>
 
-                            <form class="agregar_carrito" action="">
-                                <!-- <span>0</span> -->
-                                <input placeholder="0" type="number">
-                                <div class="cantidad">
-                                    <iconify-icon icon="material-symbols:chips-sharp"></iconify-icon>
-                                    <iconify-icon icon="ic:sharp-add-box"></iconify-icon>
-                                    <!-- <a href=""></a> -->
-                                    <!-- <a href=""></a> -->
-                                </div>
-                                <button type="submit">Agregar al carrito</button>
-                            </form>
-                            <p>Ver métodos de pago - 3 CUOTAS SIN INTERÉS</p>
+                        <form class="agregar_carrito" action="">
+                            <!-- <span>0</span> -->
+                            <input placeholder="0" type="number">
+                            <div class="cantidad">
+                                <iconify-icon icon="material-symbols:chips-sharp"></iconify-icon>
+                                <iconify-icon icon="ic:sharp-add-box"></iconify-icon>
+                                <!-- <a href=""></a> -->
+                                <!-- <a href=""></a> -->
+                            </div>
+                            <button type="submit">Agregar al carrito</button>
+                        </form>
+                        <p>Ver métodos de pago - 3 CUOTAS SIN INTERÉS</p>
 
                     </div>
                 </a>
@@ -136,7 +148,7 @@
     <!-- Footer -->
     <footer>
         <Section class="footer">
-            <nav>
+            <nav class="navbar container">
                 <ul class="menu_footer">
                     <li>
                         <a href="../pages/shop.html">SHOP</a>

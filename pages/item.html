@@ -53,44 +53,39 @@
     </header>
     <main class="container">
         <!-- Sección 1 - Cart principal -->
-        <section>
-            <article class="">
+        <section class="collection container">
+            <picture class="collection__cover">
+                <img src="../images/star-wars/baby-yoda-1.webp"
+                    alt="Figura coleccionable de Baby Yoda (Groku) - The Mandalorian Saga">
+            </picture>
+            <article class="collection__content">
+                <p class="collection__text__superior">STAR WARS</p>
+                <h3 class="collection__title">BABY YODA BLUEBALL</h3>
+                <p class="collection__text">Figura coleccionable de Baby Yoda (Groku) - The Mandalorian
+                    Saga, edición limitada.</p>
+                <p class="collection__price">$1799,99</p>
 
-                <picture>
-                    <img src="../images/star-wars/baby-yoda-1.webp"
-                        alt="Figura coleccionable de Baby Yoda (Groku) - The Mandalorian Saga">
-                </picture>
-
-                <a href="#">
-                    <div>
-                        <p>STAR WARS</p>
-                        <h2>BABY YODA BLUEBALL</h2>
-                        <p>Figura coleccionable de Baby Yoda (Groku) - The Mandalorian Saga, edición limitada.</p>
-                        <p>$1799,99</p>
-
-                        <form class="agregar_carrito" action="">
-                            <!-- <span>0</span> -->
-                            <input placeholder="0" type="number">
-                            <div class="cantidad">
-                                <iconify-icon icon="material-symbols:chips-sharp"></iconify-icon>
-                                <iconify-icon icon="ic:sharp-add-box"></iconify-icon>
-                                <!-- <a href=""></a> -->
-                                <!-- <a href=""></a> -->
-                            </div>
-                            <button type="submit">Agregar al carrito</button>
-                        </form>
-                        <p>Ver métodos de pago - 3 CUOTAS SIN INTERÉS</p>
-
+                <form class="collection__form" action="">
+                    <!-- <span>0</span> -->
+                    <input class="collection__input" placeholder="0" type="number">
+                    <div class="collection__form__buttons">
+                        <iconify-icon icon="ic:sharp-add-box" style="color: #4f4f4f;" width="16" height="18" flip="horizontal,vertical"></iconify-icon>
+                        <iconify-icon icon="material-symbols:chips-sharp" style="color: #4f4f4f;" width="16" height="18" flip="horizontal,vertical"></iconify-icon>
+                        
+                        <!-- <a href=""></a> -->
+                        <!-- <a href=""></a> -->
                     </div>
-                </a>
+                    <button class="collection__button" type="submit">Agregar al carrito</button>
+                </form>
+                <p class="collection__text__inferior"><a class="collection__link_pago" href="#">Ver métodos de pago</a> - 3 CUOTAS SIN INTERÉS</p>
             </article>
         </section>
         <!-- Sección 2 - Productos relacionados -->
-        <section>
+        <section class="collection container">
             <h2>PRODUCTOS RELACIONADOS</h2>
             <ul class="">
                 <li>
-                    <article>
+                    <article class="collection__content">
                         <span class="nuevo">NUEVO</span>
                         <a href="#">
                             <picture>

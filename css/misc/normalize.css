@@ -17,8 +17,6 @@ html {
 a {
     font-family: inherit;
     text-decoration: none;
-    /* Anulue esta propiedad ya que me impedia darle tamaño de fuente a los elementos: span, h3, h2 y p en las cards */
-    /*font-size: 2em;*/
     color: inherit;
 }
 

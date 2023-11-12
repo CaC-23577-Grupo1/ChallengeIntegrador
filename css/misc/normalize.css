@@ -25,7 +25,6 @@ ul, ol {
 }
 
 p{
-    /* Esta otra propiedad no necesite anularla, pero me parece que lo mejor tambien seria anularla */
     font-size: 1.8em;
 }
 

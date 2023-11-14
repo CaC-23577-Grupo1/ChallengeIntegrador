@@ -35,45 +35,45 @@
     border-bottom: 2px solid var(--primary-color-solid);
 }
 
-label {
+.edit_label {
     font-size: var(--font-large);
     margin-right: var(--spacing-12);
 }
 
-.label {
+.edit_label_img {
     font-size: var(--font-large);
 }
 
 
 
-select, input {
+.edit_select, .edit_input {
     font-family: var(--primary-font);
     font-size: var(--font-medium);
-    color: var(--dark-color-300);
+    color: var(--dark-color-solid);
 }
 
 
-textarea {
+.edit_textarea {
     font-family: var(--primary-font);
     font-size: var(--font-large);
-    color: var(--dark-color-300);
+    color: var(--dark-color-solid);
     margin-top: 2rem;
     width: 83rem;
 }
 
-#nombre_producto {
+.edit_nombre_prod {
     width: 30rem;
 }
 
-#sku, #precio {
+.edit_cuadro1 {
     width: 13rem;
  }
 
-#stock, #descuento {
+.edit_cuadro2 {
     width: 5.5rem;
 }
 
-select {
+.edit_select {
     width: 25rem;
     border-radius: 6px;
     margin-right: var(--spacing-12);
@@ -88,38 +88,38 @@ select {
     column-gap: var(--spacing-12);
 }
 
-picture {
+.edit_picture {
     max-width: 150px;
 }
 
-#imagenes_producto {
+.edit_img_producto{
     font-family: var(--primary-font);
-    border-color: var(--dark-color-300);
+    border-color: var(--dark-color-solid);
     width: 100%;  
 }
 
-.label-line-top{
+.edit_label-line-top{
     border-top: 1px solid var(--primary-color-solid);
     width: 15rem;
     text-align: center; 
 }
 
-select:hover,input:hover {
+/* .select_edit:hover,.input_edit:hover {
     color: var(--dark-color-900);
     font-size: var(--font-medium);
     font-family: var(--primary-font);
 }
 
-textarea:hover{
+.textarea_edit:hover{
     color: var(--dark-color-900);
     font-size: var(--font-large);
     font-family: var(--primary-font);
 }
 ::placeholder {
     font-family: var(--primary-font);
-    color: var(--dark-color-300);
-}
-button {
+    color: var(--dark-color-solid);
+}*/
+.button_modificarProducto {
     font-size: var(--font-xsmall);
     font-family: var(--primary-font);
     color: #ffffff;
@@ -139,7 +139,7 @@ button {
      .container {
        padding-left: 10px;
      }
-     textarea {
+     .edit_textarea {
         margin-top: 2rem;
         width: 100%;
         padding-left: var(--spacing-8);

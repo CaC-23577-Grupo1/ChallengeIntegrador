@@ -52,16 +52,16 @@
                <form action="">
                   <div class="edit_form__row">
                      <div class="edit_form__select">
-                           <label for="categoria">Categoría:</label>
-                           <select name="categoria" id="categoria">
+                           <label class="edit_label" for="categoria">Categoría:</label>
+                           <select class="edit_select" name="categoria" id="categoria">
                               <!--<option value="" disabled selected>Seleccionar</option>-->
                               <option value="1">Figura</option>
                               <option value="2">Figura</option>
                               <option value="3">Figura</option>
                            </select>
                           
-                           <label for="licencia">Licencia:</label>
-                           <select name="licencia" id="licencia">
+                           <label class="edit_label" for="licencia">Licencia:</label>
+                           <select class="edit_select" name="licencia" id="licencia">
                               <!--<option value="" disabled selected>Seleccionar</option>-->
                               <option value="1">STAR WARS</option>
                               <option value="2">POKEMON</option>
@@ -71,33 +71,33 @@
                   </div>
    
                   <div class="edit_form__input">
-                     <label for="nombre_producto">Nombre del producto:</label>
-                     <input type="text" name="nombre_producto" id="nombre_producto">
+                     <label class="edit_label" for="nombre_producto">Nombre del producto:</label>
+                     <input class="edit_input edit_nombre_prod" type="text" name="nombre_producto" id="nombre_producto">
                   </div>
                   <div class="edit_form__textarea">
-                     <textarea name="comentario" rows="10" cols="40" placeholder="Descripción del producto"></textarea>
+                     <textarea class="edit_textarea" name="comentario" rows="10" cols="40" placeholder="Descripción del producto"></textarea>
                   </div>
                   <div class="edit_form__row">
                      <div class="edit_form__input">
-                        <label for="sku">SKU:</label>
-                        <input type="text" name="sku" id="sku">
+                        <label class="edit_label" for="sku">SKU:</label>
+                        <input class="edit_input edit_cuadro1" type="text" name="sku" id="sku">
                      </div>
                      <div class="edit_form__input">
-                        <label for="precio">Precio:</label>
-                        <input type="text" name="precio" id="precio">
+                        <label class="edit_label" for="precio">Precio:</label>
+                        <input class="edit_input edit_cuadro1" type="text" name="precio" id="precio">
                      </div>
                      <div class="edit_form__input">
-                        <label for="stock">Stock:</label>
-                        <input type="number" name="stock" id="stock">
+                        <label class="edit_label" for="stock">Stock:</label>
+                        <input class="edit_input edit_cuadro2" type="number" name="stock" id="stock">
                      </div>
                   </div>
                   <div class="edit_form__row">
                      <div class="edit_form__input">
-                        <label for="descuento">Descuento:</label>
-                        <input type="number" name="descuento" id="descuento">
+                        <label class="edit_label" for="descuento">Descuento:</label>
+                        <input class="edit_input edit_cuadro2" type="number" name="descuento" id="descuento">
                      </div>
                      <div class="edit_form__select">
-                        <label for="cuotas">Cuotas:</label>
+                        <label class="edit_label" for="cuotas">Cuotas:</label>
                         <select name="cuotas" id="cuotas">
                            <option value="">6 Cuotas sin interés</option>
                            <option value=""></option>
@@ -106,25 +106,25 @@
                   </div>
                   <div class="edit_form__imagenes">
                      <div class="edit_form__row">
-                     <label for="imagenes_producto">Imágenes:</label>
-                     <input type="file" name="imagenes_producto" id="imagenes_producto" > 
+                     <label class="edit_label" for="imagenes_producto">Imágenes:</label>
+                     <input class="edit_input edit_img_producto" type="file" name="imagenes_producto" id="imagenes_producto" > 
                      </div>
                      <div class="img-preview_grid">
-                        <picture>
+                        <picture class="edit_picture">
                         <img id="img-preview__frente" src="../images/harry-potter/snape-patronus-1.webp" alt="Imagen del frente del producto" >
                         </picture>
-                        <picture>
+                        <picture class="edit_picture">
                         <img id="img-preview__dorso" src="../images/harry-potter/snape-patronus-box.webp" alt="Imagen del dorso del producto">
                         </picture>
-                        <div class="label-line-top">
-                        <p class="label">Frente</p>
+                        <div class="edit_label-line-top">
+                        <p class="edit_label_img">Frente</p>
                         </div> 
-                        <div class="label-line-top">         
-                        <p class="label">Dorso</p>
+                        <div class="edit_label-line-top">         
+                        <p class="edit_label_img">Dorso</p>
                         </div>
                      </div>
                   </div>
-                  <button type="submit">Modificar Producto</button>
+                  <button class="button_modificarProducto" type="submit">Modificar Producto</button>
                </form>
          </section>
       </main>
@@ -140,8 +140,8 @@
                  <img src="../images/branding/isotype.svg" alt="Logo Funkoshop">
              </picture>
          </nav>
-         <p class="footer__derechos container CopyMax">Todos los derechos Resevados 2023 - Funkoshop &copy;</p>
-         <p class="footer__derechos container CopyMin">Todos los derechos Resevados 2023<br>Funkoshop &copy;</p>
+         <p class="footer__derechos container CopyMax">Todos los derechos Reservados 2023 - Funkoshop &copy;</p>
+         <p class="footer__derechos container CopyMin">Todos los derechos Reservados 2023<br>Funkoshop &copy;</p>
    </footer>  
     
     <!-- Vinculacion con Libreria Iconify 1.0.7 -->

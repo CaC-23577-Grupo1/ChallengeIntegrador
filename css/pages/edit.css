@@ -1,72 +1,6 @@
 
 /* Desarrollo de Estilos para la Seccion:  */
 
-/*Agregar esta normalización*/
-img{
-    width: 100%;
-}
-
-/*Estilos del Header*/
-
-header {
-    width: 100%;
-}
-.navbar {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
- }
-
- .navbar__logo {
-    max-width: 32rem;
- }
-
- .navbar__menu{
-    display: flex;
-    align-items: center;
-    gap:2rem;
- }
-
- .navbar__link {
-    font-size: var(--font-medium);
-    padding: var(--spacing-8) var(--spacing-16);
-    /*display: inline-block;*/
-    transition: background .3s ease-in-out;
-    position: relative;
- }
-
-.navbar__link:hover {
-    background-color: var(--primary-color-solid);
- }
-
- .with-icon {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-8);
- }
-
- .with-submenu:hover .submenu {
-    display: block;
- }
-
-
- .submenu {
-    display: none;
-    width: 300px;
-    position: absolute;
-    background-color: var(--dark-bg-color-solid);
- }
-
- .submenu__link {
-    display: block;
-    padding: var(--spacing-8) var(--spacing-16);
-    font-size: var(--font-medium);
-    transition: background .3s ease-in-out;
- } 
-
- .submenu__link:hover {
-    background-color: var(--primary-color-900);
- }
 
 /*Estilos de main*/
 .edit {
@@ -198,54 +132,10 @@ button {
 
 
 
-/*Estilos del footer*/
-.nav_footer__container {
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-start;  
- }
 
- .footer_logo {
-    width:170px;;
- }
-
- .nav_footer__menu{
-    display: flex;
-    flex-direction: column;
-    row-gap: var(--spacing-8);
- }
-
- .navbar__link li {
-    font-size: var(--font-inter);
-    font-weight: 500;
-    display: inline-block;
-    transition: background .3s ease-in-out;
-    position: relative;
- }
-
-  .navbar__link:hover {
-    background-color: var(--primary-color-solid);
- }
-
- .note_footer {
-    margin-top: var(--spacing-68);
-    text-align: center;
- }
-
- /*Estilos repetidos de header y footer para agregar a normalize*/
- header, footer {
-    color: var(--light-bg-color-solid);
-    font-family: var(--alternative-font);
-    background-color: var(--dark-bg-color-solid);
-    padding: var(--spacing-36);
-    align-items: center;
-}
 
 @media screen and (max-width: 450px)  {
-    .navbar {
-        display:flex;
-        flex-direction: column;
-     }
+   
      .container {
        padding-left: 10px;
      }

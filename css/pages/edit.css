@@ -55,7 +55,7 @@
 
 .edit_textarea {
     font-family: var(--primary-font);
-    font-size: var(--font-large);
+    font-size: var(--font-inter);
     color: var(--dark-color-solid);
     margin-top: 2rem;
     width: 83rem;
@@ -114,11 +114,12 @@
     color: var(--dark-color-900);
     font-size: var(--font-large);
     font-family: var(--primary-font);
-}
+}*/
+
 ::placeholder {
     font-family: var(--primary-font);
-    color: var(--dark-color-solid);
-}*/
+    color: var(--dark-color-500);
+}
 .button_modificarProducto {
     font-size: var(--font-xsmall);
     font-family: var(--primary-font);

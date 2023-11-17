@@ -1,83 +1,4 @@
-/* Desarrollo de Estilos para la Seccion:  */
-/* header */
-
-
-header,
-footer {
-    font-family: var(--alternative-font);
-    background-color: var(--dark-bg-color-solid);
-    padding: var(--spacing-36);
-}
-
-img {
-    width: 100%;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.navbar__logo {
-    max-width: 300px;
-}
-
-.navbar__menu {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-20);
-
-}
-
-.navbar__link {
-    font-size: var(--font-inter);
-    padding: var(--spacing-8) var(--spacing-16);
-    display: inline-block;
-    transition: background .3s ease-in-out;
-}
-
-
-
-.with-submenu:hover .submenu {
-    display: block;
-}
-
-.navbar__link:hover {
-    background-color: var(--primary-color-solid);
-}
-
-.with-icon {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-8);
-}
-
-.submenu {
-    position: absolute;
-    width: 300px;
-    display: none;
-    /* padding: var(--spacing-8) var(--spacing-16); */
-    background-color: var(--dark-bg-color-solid);
-}
-
-/* .submenu__item {
-    display: block;
-    padding: var(--spacing-8) var(--spacing-16);
-    font-size: var(--font-medium);
-} */
-
-.submenu__link {
-    display: block;
-    padding: var(--spacing-8) var(--spacing-16);
-    font-size: var(--font-inter);
-    transition: background .3s ease-in-out;
-}
-
-.submenu__link:hover {
-    background-color: var(--primary-color-solid);
-}
+/* - - - - - - - - - - - - - - - - - - -  INICIO DEL CSS PARA LA SECCION ITEM - - - - - - - - - - - - - - - - - - -  */
 
 .collection {
     display: grid;
@@ -269,17 +190,6 @@ input[type=number]::-webkit-outer-spin-button {
     display: none;
 }
 
-/* FOOTER */
-.footer {
-    padding: var(--spacing-68) var(--spacing-68) var(--spacing-24) var(--spacing-68);
-}
-
-.footer__copy {
-    font-size: var(--font-inter);
-    margin-top: var(--spacing-36);
-    text-align: center;
-}
-
 /* ANIMATIONS */
 
 @keyframes fade {
@@ -291,3 +201,5 @@ input[type=number]::-webkit-outer-spin-button {
         opacity: 1;
     }
 }
+
+/* - - - - - - - - - - - - - - - - - - -  FINAL DEL CSS PARA LA SECCION ITEM - - - - - - - - - - - - - - - - - - -  */

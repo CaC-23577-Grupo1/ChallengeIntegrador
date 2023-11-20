@@ -5,8 +5,8 @@
     /*      - - -     Paleta de Colores     - - -      */
 
     /* FF3333 - Color Primario - Rojo */
-    --primary-color-solid: rgba(255, 51, 51, 1.0);
-    --primary-color-900: rgba(255, 51, 51, 0.9);
+    --primary-color-solid: #ff3333;
+    --primary-color-900: #ff3333e6;
     --primary-color-500: rgba(255, 51, 51, 0.5);
     --primary-color-300: rgba(255, 51, 51, 0.3);
 
@@ -34,12 +34,6 @@
     /* Color de Fondo Claro - Blanco */
     --light-bg-color-solid: #FAFAFF;
 
-    /* Color para los Inputs - Gris Claro */
-    --gray-color-solid: rgba(116, 116, 116, 1.0);
-    
-    /* Color Verde Claro llamativo */
-    --green-color-900: rgba(30, 136, 51, 0.9);
-
 
     /* Tipografia */
     --primary-font: 'Inter', sans-serif;
@@ -63,6 +57,8 @@
     --spacing-36: 3.6rem;
     --spacing-28: 2.8rem;
     --spacing-24: 2.4rem;
+    /* agrego espaciado */
+    --spacing-20: 2.0rem;
     --spacing-18: 1.8rem;
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;

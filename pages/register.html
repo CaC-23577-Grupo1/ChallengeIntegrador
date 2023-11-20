@@ -14,68 +14,76 @@
 
 <body>
   <header>
-    <nav>
-      <div class="nav-container">
-        <a href="/pages/home.html">
-          <img class="logo-horizontal" src="../images/branding/logo_light_horizontal.svg" alt="logo-horizontal"></a>
-        <ul class="lista-nav">
-          <li><a href="/pages/shop.html">VER TIENDA</a></li>
-          <li><a href="/pages/admin.html">ADMIN</a></li>
-          <li><a href="/pages/home.html">SALIR</a></li>
-        </ul>
-      </div>
-    </nav>
+      <nav class="header__navbar container">
+          <picture class="header__logo">
+              <a href="./home.html">
+                  <img src="../images/branding/logo_light_horizontal.svg" alt="Funkoshop Logo">
+              </a>
+          </picture>
+          <ul class="header__menu">
+                  <li class="header__menubtn submenuopen">
+                      <a class="header__menubtn-link" href="./home.html">VER TIENDA</a>                            
+                  </li>
+                  <li class="header__menubtn">
+                      <a class="header__menubtn-link" href="./admin.html">ADMIN</a>
+                  </li>
+                  <li class="header__menubtn">
+                      <a class="header__menubtn-link" href="#">SALIR</a>
+                  </li>
+          </ul>
+      </nav>
   </header>
-  <main>
-    <h2>CREA TU CUENTA</h2>
-    <p>Completa el formulario para ser parte del mundo de los Funkos</p>
-    <form>
+
+  <main class="register__main container">
+    <h2 class="register__tittle">CREA TU CUENTA</h2>
+    <p class="register__parraf">Completa el formulario para ser parte del mundo de los Funkos</p>
+    <form class="register__form">
       <div class="form-group">
-        <label for="name">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" placeholder="John">
+        <label class="register__labels" for="name">Nombre:</label>
+        <input class="register__inputs" type="text" name="nombre" id="nombre" placeholder="John">
       </div>
       </div>
-      <div class="form-group"><label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido" placeholder="Doe">
+      <div class="form-group">
+        <label class="register__labels" for="apellido">Apellido:</label>
+        <input class="register__inputs" type="text" name="apellido" id="apellido" placeholder="Doe">
       </div>
-      <div class="form-group"><label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="Johndoe@correo.com">
+      <div class="form-group">
+        <label class="register__labels" for="email">Email:</label>
+        <input class="register__inputs" type="email" name="email" id="email" placeholder="Johndoe@correo.com">
       </div>
-      <div class="form-group"><label for="contrasenha">Contraseña:</label>
-        <input class="contra" type="password" name="contrasenha" id="contrasenha" placeholder=".........">
+      <div class="form-group">
+        <label class="register__labels" for="contrasenha">Contraseña:</label>
+        <input class="register__inputs" type="password" name="contrasenha" id="contrasenha" placeholder=".........">
       </div>
-      <div class="form-group"><label for="repetir-contrasenha">Repita contraseña:</label>
-        <input class="contra" type="password" name="repetir-contrasenha" id="repetir-contrasenha"
-          placeholder=".........">
+      <div class="form-group">
+        <label class="register__labels" for="repetir-contrasenha">Repita contraseña:</label>
+        <input class="register__inputs" type="password" name="repetir-contrasenha" id="repetir-contrasenha" placeholder=".........">
       </div>
       <div class="boton-y-checkbox">
-        <input class="boton-registrar" type="submit" value="Registrar">
-        <div class="checkbox">
-          <input type="checkbox" name="terminos" id="terminos">
-          <label class="terminos" for="terminos">Acepto <a href="#">Términos y Condiciones</a></label>
-        </div>
+        <input class="boton-registrar" type="submit" value="Registrar">  
+        <p class="termcond__acepto"><input class="register__checkbox" type="checkbox" name="terminos" id="terminos">Acepto&nbsp;<a class="termcond__terminos" href="#">Términos y Condiciones</a></p>
       </div>
     </form>
   </main>
+  
   <footer>
-    <div class="footer-container">
-      <div class="contenedor-logo-enlaces">
-        <ul class="lista-footer">
-          <li><a href="/pages/shop.html">SHOP</a></li>
-          <li><a href="/pages/register.html">REGISTRARSE</a></li>
-          <li><a href="/pages/login.html">INGRESAR</a></li>
-          <li><a href="#">CONTACTO</a></li>
+    <nav class="footer__navbar container">
+        <ul class="footer__menu">
+            <li class="footer__menubtn"><a class="footer__menubtn-link" href="./shop.html">SHOP</a></li>
+            <li class="footer__menubtn"><a class="footer__menubtn-link" href="./register.html">REGISTRARSE</a></li>
+            <li class="footer__menubtn"><a class="footer__menubtn-link" href="./login.html">INGRESAR</a></li>
+            <li class="footer__menubtn"><a class="footer__menubtn-link" href="#">CONTACTO</a></li>
         </ul>
-        <picture>
-          <img class="logo-isotipo" src="../images/branding/isotype.svg" alt="logo isotipo">
+        <picture class="footer__logo">
+            <img src="../images/branding/isotype.svg" alt="Logo Funkoshop">
         </picture>
-      </div>
-      <p class="derechos">All rights reserved 2022 - Funkoshop &copy;</p>
-    </div>
-  </footer>
+    </nav>
+    <p class="footer__derechos container CopyMax">Todos los derechos Reservados 2023 - Funkoshop &copy;</p>
+    <p class="footer__derechos container CopyMin">Todos los derechos Reservados 2023<br>Funkoshop &copy;</p>
+</footer>  
 
-  <!-- Vinculacion con Libreria Iconify 1.0.7 -->
-  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+<!-- Vinculacion con Libreria Iconify 1.0.7 -->
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 
 </html>

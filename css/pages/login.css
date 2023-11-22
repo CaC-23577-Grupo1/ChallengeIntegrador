@@ -77,6 +77,13 @@
     gap: 5rem;
 }
 
+.login__recordarme{
+    color: var(--dark-color-solid); 
+    font-family: var(--primary-font);
+    font-size: var(--font-medium);
+    font-weight: 400;
+}
+
 .checkbox{
     transform: scale(1.25);
     margin-right: var(--spacing-8);

@@ -33,10 +33,11 @@ footer{
     max-width: 140px;
 }
 
-    .footer__derechos{
-        text-align: center;
-        margin-top: var(--spacing-36);
-    }
+.footer__derechos{
+    text-align: center;
+    margin-top: var(--spacing-36);
+    font-size: var(--font-inter); 
+}
 
 @media screen and (max-width: 589px){
     .CopyMax{

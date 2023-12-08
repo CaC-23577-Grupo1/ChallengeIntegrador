@@ -1,5 +1,6 @@
 /* - - - - - - - - - - - - - - - - - - -  INICIO DEL CSS PARA LA SECCION CART - - - - - - - - - - - - - - - - - - -  */
 
+/* Padding que actuara al achicarse el ancho para que no quede pegado al lateral el Main */
 .cartcontainer{
     padding: var(--spacing-128) 0px;
 }
@@ -159,26 +160,50 @@
 .cart__item-qplusminus{
     display: flex;
     flex-direction: column;
-    gap: calc(var(--spacing-8) * 0.2);
+    gap: calc(var(--spacing-8) * 0.5);
 }
 
+/* AQUI  Eliminar ya que se paso el A a un BUTTON ----------------------------------------------------------------------------------------------------- */
+/*
 .cart__item-qplus{
     font-size: var(--font-medium);
     color: #F24E1E;
 }
+*/
 
+/* AQUI  Eliminar ya que se paso el A a un BUTTON ----------------------------------------------------------------------------------------------------- */
+/*
 .cart__item-qminus{
     font-size: var(--font-medium);
     color: #F24E1E;
 }
+*/
 
+.qplusminusbtn{
+    font-size: var(--font-large);
+    font-family: var(--alternative-font);
+    color: var(--light-color-solid);
+    font-weight: 400;
+    line-height: 1.8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color:  #F24E1E;
+}
+
+
+/* AQUI  Eliminar ya que se paso el campo de Number a Text ----------------------------------------------------------------------------------------------------- */
 /* Momentaneamente solucionado de esta forma aunque creo que lo mejor es un Text con validacion para solo numeros */
+/*
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none; /* deshabilita las flechas en Chrome y Safari */
-  appearance: none; /* deshabilita las flechas en otros navegadores */
-  margin: 0; /* evita el espacio adicional causado por la eliminar las flechas */
+  -webkit-appearance: none;     deshabilita las flechas en Chrome y Safari 
+  appearance: none;             deshabilita las flechas en otros navegadores 
+  margin: 0;                    evita el espacio adicional causado por la eliminar las flechas 
 }
+*/
 
 /* Precio */
 .cart__item-price{
@@ -190,6 +215,13 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* Eliminar */
+.deletebtn{
+    font-size: calc(var(--font-xsmall) * 0.7);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
 .cart__item-delete{
     font-size: var(--font-large);
     color: #F24E1E;
@@ -204,6 +236,7 @@ input[type="number"]::-webkit-outer-spin-button {
         position: absolute;
         right: 20px;
         top: 20px;
+        z-index: 2;
     }
 }
 
@@ -267,6 +300,21 @@ input[type="number"]::-webkit-outer-spin-button {
     font-family: var(--primary-font);
     font-size: var(--font-inter);
     font-weight: 700;
+}
+
+.EnvioGratis{
+    position: relative;
+}
+
+.EnvioGratis::after{
+    content: "";
+    position: absolute;
+    top: 45%;
+    transform: translate(0%, 50%);
+    transform: scale(1.1);
+    left: 0;
+    right: 0;
+    border-bottom: 3px solid var(--dark-bg-color-solid);
 }
 
 .cart__total-listitem:not(:last-child){

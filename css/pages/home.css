@@ -195,47 +195,14 @@
     margin-bottom: var(--spacing-68)
 }
 
-.slider__list{
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-36);
+
+
+/* INICIO elemento Card del Slider */
+
+.card__container{
+    margin: 0 auto;
+    max-width: 355px;
 }
-
-.slider__card {
-    display: none;
-}
-
-/* Ajustamos la cantidad de Cards a mostrar dependiendo del Ancho */
-@media screen and (min-width: 1200px) {
-    .slider__card {
-        display: block;
-    }
-}
-
-@media screen and (min-width: 850px) and (max-width: 1199px) {
-    .slider__card:nth-child(-n+3) {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 849px) {
-    .slider__card:nth-child(-n+2) {
-        display: block;
-    }
-}
-
-/* INICIO Card del Slider */
-
-/* Animacion para el cambio de imagen suave de la card */
-@keyframes fade{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
 
 .card__imagecontainer{
     position: relative;
@@ -266,7 +233,7 @@
 
 .card__newprod{
     position: absolute;
-    right: 0;
+    right: 1;
     background-color: var(--primary-color-solid);
     font-family: var(--primary-font);
     font-size: var(--font-xsmall);
@@ -311,6 +278,17 @@
     font-size: var(--font-xsmall);
     font-weight: 700;
 }
+
+
+/* Animacion para el cambio de imagen suave de la card */
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 /* FIN Card del Slider */
 
 
@@ -320,13 +298,15 @@
     padding: var(--spacing-8);
     border-radius: 5px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    z-index: 1;
+    z-index: 2;
     border: solid 2px var(--dark-color-300);
     transition: all .1s ease-in-out;
+    background-color: var(--light-bg-color-solid);
 }
 
 .slider__button:hover{
     border: solid 2px var(--secondary-color-900);
+    cursor: pointer;
 }
 
 .left{

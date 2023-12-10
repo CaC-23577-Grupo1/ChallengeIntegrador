@@ -14,7 +14,7 @@ const adminRoutes = require('./src/routes/adminRoutes');
 const authRoutes = require('./src/routes/authRoutes');
 const errorRoutes = require('./src/routes/errorRoutes');
 
-const PORT = process.env.SERVERPORT || process.env.AUXSERVERPORT;       // Puerto que estara escuchando el servidor
+const PORT = process.env.PORT || process.env.AUXPORT;       // Puerto que estara escuchando el servidor
 
 /* Template Engine */
 app.set('view engine', 'ejs');

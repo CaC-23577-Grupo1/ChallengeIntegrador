@@ -9,6 +9,7 @@ const mainControllers = require('../controllers/mainControllers');      // Impor
 router.get('/', mainControllers.indexpage);
 router.get('/home', mainControllers.home);
 router.get('/contact', mainControllers.contact);
+router.post('/contact', mainControllers.contactSend);
 router.get('/about', mainControllers.about);
 router.get('/faqs', mainControllers.faqs);
 

@@ -11,4 +11,3 @@ subtract.addEventListener('click', () => {
         quantity.value = Number(quantity.value) - 1;
     }
 });
-// console.log(add, subtract, quantity);

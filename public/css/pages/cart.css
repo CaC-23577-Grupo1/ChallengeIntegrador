@@ -1,6 +1,5 @@
 /* - - - - - - - - - - - - - - - - - - -  INICIO DEL CSS PARA LA SECCION CART - - - - - - - - - - - - - - - - - - -  */
 
-/* Padding que actuara al achicarse el ancho para que no quede pegado al lateral el Main */
 .cartcontainer{
     padding: var(--spacing-128) 0px;
 }
@@ -163,22 +162,6 @@
     gap: calc(var(--spacing-8) * 0.5);
 }
 
-/* AQUI  Eliminar ya que se paso el A a un BUTTON ----------------------------------------------------------------------------------------------------- */
-/*
-.cart__item-qplus{
-    font-size: var(--font-medium);
-    color: #F24E1E;
-}
-*/
-
-/* AQUI  Eliminar ya que se paso el A a un BUTTON ----------------------------------------------------------------------------------------------------- */
-/*
-.cart__item-qminus{
-    font-size: var(--font-medium);
-    color: #F24E1E;
-}
-*/
-
 .qplusminusbtn{
     font-size: var(--font-large);
     font-family: var(--alternative-font);
@@ -192,18 +175,6 @@
     height: 1.8rem;
     background-color:  #F24E1E;
 }
-
-
-/* AQUI  Eliminar ya que se paso el campo de Number a Text ----------------------------------------------------------------------------------------------------- */
-/* Momentaneamente solucionado de esta forma aunque creo que lo mejor es un Text con validacion para solo numeros */
-/*
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;     deshabilita las flechas en Chrome y Safari 
-  appearance: none;             deshabilita las flechas en otros navegadores 
-  margin: 0;                    evita el espacio adicional causado por la eliminar las flechas 
-}
-*/
 
 /* Precio */
 .cart__item-price{
@@ -328,6 +299,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .cart__total-paybtn{
     width: 100%;
+    border: none; 
+    cursor: pointer;
     display: inline-block;
     padding: var(--spacing-12) 0px;
     font-family: var(--primary-font);

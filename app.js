@@ -1,6 +1,8 @@
 const express = require('express');     // Importamos el modulo de Express
 const app = express();                  // Ejecutamos Express
 
+const path = require('path');           // Metodo Path para resolver rutas
+
 const methodOverride = require('method-override');      // Herramienta "method-override" para sobreescribir los POST
 
 require('dotenv').config();
@@ -13,6 +15,10 @@ const authRoutes = require('./src/routes/authRoutes');
 const errorRoutes = require('./src/routes/errorRoutes');
 
 const PORT = process.env.SERVERPORT || process.env.AUXSERVERPORT;       // Puerto que estara escuchando el servidor
+
+/* Template Engine */
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, './src/views'));
 
 /* Middlewares de Configuracion */
 app.use(express.urlencoded());              // Parsea los datos del Body en el POST

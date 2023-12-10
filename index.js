@@ -18,14 +18,14 @@ const PORT = process.env.PORT || process.env.AUXPORT;       // Puerto que estara
 
 /* Template Engine */
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, './src/views'));
+app.set('views', path.resolve(__dirname, './src/views'));
 
 /* Middlewares de Configuracion */
 app.use(express.urlencoded());              // Parsea los datos del Body en el POST
 app.use(express.json());                    // Parsea los datos del Body en el POST
 app.use(methodOverride('_method'));         // Sobreescribe los POST cuando usamos "_method"
 
-app.use(express.static('public'));          // Carpeta de Archivos Estaticos
+app.use(express.static(path.resolve(__dirname, 'public')));          // Carpeta de Archivos Estaticos
 
 /* Middlewares de Rutas  */
 app.use('/', mainRoutes);

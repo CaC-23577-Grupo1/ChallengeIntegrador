@@ -326,8 +326,8 @@
     "prod_intereses": false,
     "prod_nuevo": true,
     "prod_sliderincluir": true,
-    "prod_imagen_frontal": "/images/remeras/death-star-azul.png",
-    "prod_imagen_trasera": "/images/remeras/death-star-negra.png"
+    "prod_imagen_frontal": "/images/remeras/death-star-negra.png",
+    "prod_imagen_trasera": "/images/remeras/death-star-azul.png"
   },
   {
     "prod_id": 23,
@@ -342,7 +342,7 @@
     "prod_nuevo": true,
     "prod_sliderincluir": true,
     "prod_imagen_frontal": "/images/remeras/grogu-circulo-azul.png",
-    "prod_imagen_trasera": "/images/remeras/grogu-circulo-negra.pngp"
+    "prod_imagen_trasera": "/images/remeras/grogu-circulo-negra.png"
   },
   {
     "prod_id": 24,
@@ -356,8 +356,8 @@
     "prod_intereses": false,
     "prod_nuevo": true,
     "prod_sliderincluir": true,
-    "prod_imagen_frontal": "/images/remeras/mandalorian-casco-azul.png",
-    "prod_imagen_trasera": "/images/remeras/mandalorian-casco-negra.png"
+    "prod_imagen_frontal": "/images/remeras/mandalorian-casco-negra.png",
+    "prod_imagen_trasera": "/images/remeras/mandalorian-casco-azul.png"
   },
   {
     "prod_id": 25,
@@ -386,8 +386,8 @@
     "prod_intereses": false,
     "prod_nuevo": true,
     "prod_sliderincluir": true,
-    "prod_imagen_frontal": "/images/remeras/new-hope-azul.png",
-    "prod_imagen_trasera": "/images/remeras/new-hope-negra.png"
+    "prod_imagen_frontal": "/images/remeras/new-hope-negra.png",
+    "prod_imagen_trasera": "/images/remeras/new-hope-azul.png"
   },
   {
     "prod_id": 27,

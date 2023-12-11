@@ -9,7 +9,7 @@
                         <img src="../images/icons/search_icon.svg" alt="Search">
                     <!-- </a> -->
                 </div>
-                <input id="search-textinput" class="searchbar__textinput" type="text" placeholder="código, nombre o categoria">
+                <input id="search-textinput" class="searchbar__textinput" type="text" placeholder="código, nombre, categoria o licencia">
             
         </nav>        
 
@@ -28,7 +28,7 @@
                     <th class="list-table__TH-id">ID</th>
                     <th class="list-table__TH-code">Código</th>
                     <th class="list-table__TH-name">Nombre del Producto</th>
-                    <th class="list-table__TH-categ">Categoría</th>
+                    <th class="list-table__TH-categ">Categoría / Licencia</th>
                     <th></th>
                 </tr>
             </thead>
@@ -43,7 +43,7 @@
                                     <td class="list-table__id"><%= producto.prod_id %></td>
                                     <td class="list-table__code"><%= producto.prod_sku %></td>
                                     <td class="list-table__name"><%= producto.prod_nombre %></td>
-                                    <td class="list-table__categ"><%= producto.prod_licencia %></td>
+                                    <td class="list-table__categ"><%= producto.prod_categoria %> / <%= producto.prod_licencia %></td>
                                     <td class="list-table__action">
                                         <div class="list-table__iconcontainer">
                                             <a href="/admin/edit/<%= producto.prod_id %>"><i class="fa-solid fa-pen editbtnicon"></i></a>

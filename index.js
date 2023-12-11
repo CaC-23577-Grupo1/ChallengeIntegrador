@@ -28,10 +28,10 @@ app.use(methodOverride('_method'));         // Sobreescribe los POST cuando usam
 app.use(express.static(path.resolve(__dirname, 'public')));          // Carpeta de Archivos Estaticos
 
 /* Middlewares de Rutas  */
+app.use('/shop', shopRoutes);
+app.use('/admin', adminRoutes);
+app.use('/auth', authRoutes);
 app.use('/', mainRoutes);
-app.use('/', shopRoutes);
-app.use('/', adminRoutes);
-app.use('/', authRoutes);
 
 /* Rutas de Error */
 app.use(errorRoutes);

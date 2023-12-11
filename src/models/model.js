@@ -4,6 +4,13 @@ const fs = require('fs');
 const path = require('path');
 
 
+/* Funcion para mezclar los ITEMS y mostrarlos en orden aleatorio (Solo sera usada aqui dentro del modelo) */
+function generarOrdenAleatorio(array) {
+    const copyArray = [...array]; //
+    return copyArray.sort(() => Math.random() - 0.5);
+  }
+
+
 // Funcion que traera TODOS producto del JSON
 const traerTodosLosProductos = async () => {
 
@@ -37,6 +44,7 @@ const traerProductosFiltradosAdmin = async (valorBusqueda) => {
     const productosFiltrados = datosJsonParseados.filter(producto =>
             (producto.prod_sku.toLowerCase()).includes(valorBusqueda.toLowerCase()) ||
             (producto.prod_nombre.toLowerCase()).includes(valorBusqueda.toLowerCase()) ||
+            (producto.prod_categoria.toLowerCase()).includes(valorBusqueda.toLowerCase()) ||
             (producto.prod_licencia.toLowerCase()).includes(valorBusqueda.toLowerCase())
         );
 
@@ -55,13 +63,16 @@ const traerProductosFiltradosShop = async (nombreQueryParam, valorQueryParam) =>
     
     switch (nombreQueryParam) {
         case "newProducts":
-            productosFiltrados = datosJsonParseados.filter(producto => producto.prod_nuevo == true);
+            listaProductos = datosJsonParseados.filter(producto => producto.prod_nuevo == true);
+            productosFiltrados = generarOrdenAleatorio(listaProductos);
             break;
         case "license":
-            productosFiltrados = datosJsonParseados.filter(producto => producto.prod_licencia.toLowerCase() == valorQueryParam.toLowerCase());
+            listaProductos = datosJsonParseados.filter(producto => producto.prod_licencia.toLowerCase() == valorQueryParam.toLowerCase());
+            productosFiltrados = generarOrdenAleatorio(listaProductos);
             break;
         case "category":
-            productosFiltrados = datosJsonParseados.filter(producto => producto.prod_categoria.toLowerCase() == valorQueryParam.toLowerCase());
+            listaProductos = datosJsonParseados.filter(producto => producto.prod_categoria.toLowerCase() == valorQueryParam.toLowerCase());
+            productosFiltrados = generarOrdenAleatorio(listaProductos);
             break;
         case "buscar":
             productosFiltrados = datosJsonParseados.filter(producto => 
@@ -87,7 +98,7 @@ const traerProductosSlider = async () => {
 
     const productosSeleccionados = datosJsonParseados.filter(producto => producto.prod_sliderincluir == true);                                                                                                    
 
-    return productosSeleccionados;
+    return generarOrdenAleatorio(productosSeleccionados);
 };
 
 

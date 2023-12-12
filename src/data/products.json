@@ -311,8 +311,8 @@
     "prod_intereses": false,
     "prod_nuevo": true,
     "prod_sliderincluir": true,
-    "prod_imagen_frontal": "/images/remeras/darth-vader-azul.webp",
-    "prod_imagen_trasera": "/images/remeras/darth-vader-negra.webp"
+    "prod_imagen_frontal": "/images/remeras/darth-vader-azul.png",
+    "prod_imagen_trasera": "/images/remeras/darth-vader-negra.png"
   },
   {
     "prod_id": 22,
@@ -326,8 +326,8 @@
     "prod_intereses": false,
     "prod_nuevo": true,
     "prod_sliderincluir": true,
-    "prod_imagen_frontal": "/images/remeras/death-star-azul.webp",
-    "prod_imagen_trasera": "/images/remeras/death-star-negra.webp"
+    "prod_imagen_frontal": "/images/remeras/death-star-negra.png",
+    "prod_imagen_trasera": "/images/remeras/death-star-azul.png"
   },
   {
     "prod_id": 23,
@@ -341,8 +341,8 @@
     "prod_intereses": false,
     "prod_nuevo": true,
     "prod_sliderincluir": true,
-    "prod_imagen_frontal": "/images/remeras/grogu-circulo-azul.webp",
-    "prod_imagen_trasera": "/images/remeras/grogu-circulo-negra.webp"
+    "prod_imagen_frontal": "/images/remeras/grogu-circulo-azul.png",
+    "prod_imagen_trasera": "/images/remeras/grogu-circulo-negra.png"
   },
   {
     "prod_id": 24,
@@ -356,8 +356,8 @@
     "prod_intereses": false,
     "prod_nuevo": true,
     "prod_sliderincluir": true,
-    "prod_imagen_frontal": "/images/remeras/mandalorian-casco-azul.webp",
-    "prod_imagen_trasera": "/images/remeras/mandalorian-casco-negra.webp"
+    "prod_imagen_frontal": "/images/remeras/mandalorian-casco-negra.png",
+    "prod_imagen_trasera": "/images/remeras/mandalorian-casco-azul.png"
   },
   {
     "prod_id": 25,
@@ -371,8 +371,8 @@
     "prod_intereses": false,
     "prod_nuevo": true,
     "prod_sliderincluir": true,
-    "prod_imagen_frontal": "/images/remeras/mandalorian-y-grogu-azul.webp",
-    "prod_imagen_trasera": "/images/remeras/mandalorian-y-grogu-negra.webp"
+    "prod_imagen_frontal": "/images/remeras/mandalorian-y-grogu-azul.png",
+    "prod_imagen_trasera": "/images/remeras/mandalorian-y-grogu-negra.png"
   },
   {
     "prod_id": 26,
@@ -386,8 +386,8 @@
     "prod_intereses": false,
     "prod_nuevo": true,
     "prod_sliderincluir": true,
-    "prod_imagen_frontal": "/images/remeras/new-hope-azul.webp",
-    "prod_imagen_trasera": "/images/remeras/new-hope-negra.webp"
+    "prod_imagen_frontal": "/images/remeras/new-hope-negra.png",
+    "prod_imagen_trasera": "/images/remeras/new-hope-azul.png"
   },
   {
     "prod_id": 27,

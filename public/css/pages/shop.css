@@ -112,7 +112,13 @@
 /* CUERPO PRINCIPAL DE VISUALIZACION */
 
 .main__articles{
+    position: relative;
     max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: center;
+    width: 100%;
 }
 
 .card__container{
@@ -120,8 +126,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-
 
 /* INICIO DEL PAGINADOR */
 
@@ -184,5 +188,8 @@
     justify-content: center;
     font-size: var(--font-inter);
     gap: 10px;
+    margin:50px 50px;
+    max-height:min-content;
 }
+
 /* - - - - - - - - - - - - - - - - - - -  FINAL DEL CSS PARA LA SECCION SHOP - - - - - - - - - - - - - - - - - - -  */
